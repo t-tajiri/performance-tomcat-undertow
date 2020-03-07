@@ -7,7 +7,6 @@ import io.gatling.http.protocol.HttpProtocolBuilder
 import io.gatling.http.request.builder.HttpRequestBuilder
 
 class PerformanceSimulation extends Simulation {
-
   object Server {
     val launch: HttpRequestBuilder = http("request").get(System.getProperty("gatling.test.path", "/"))
   }
